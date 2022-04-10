@@ -7,9 +7,9 @@ Example:
 3.Comparable - compareTo()
 4.Comparator - compare()
 In stream api
-1.Consumer - accept(T t) - for manupulation
-2.Predicate - test(T t) - for checking boolean
-3.Supplier - get() - no input but get output
+1.Consumer - accept(T t) - foreach
+2.Predicate - test(T t) - filter
+3.Supplier - get() - empty check forlist
 
 
 
