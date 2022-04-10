@@ -9,9 +9,7 @@ package lambda;
 public class Main {
 
 	public static void main(String[] args) {
-		MyFunctionalInterface functionalInterface = (a1, a2) -> {
-			return a1 + a2;
-		};
+		MyFunctionalInterface functionalInterface = (a1, a2) -> a1 + a2;
 		System.out.println(functionalInterface.sum(10, 10));
 
 	}

@@ -10,6 +10,12 @@ public class BookModel {
 	private int id;
 	private String name;
 
+	public BookModel(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -24,6 +30,11 @@ public class BookModel {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "BookModel [id=" + id + ", name=" + name + "]";
 	}
 
 }
