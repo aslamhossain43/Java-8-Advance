@@ -14,7 +14,11 @@ Stream api: It is used to process list of objects.
 map(): takes stream and return another transform stream.[a,b,c] > [A,B,C] used for one-to-one mapping
 flarMap(): takes stream of stream and return another stream.[[1,2],[3,4]] > [1,2,3,4]
 
+Concrete vs instance method:
+Concreate method: not abstract
+Instance method: not static
 
+Optional<> is recommended to use in getter to avoid null.
 
 
 
