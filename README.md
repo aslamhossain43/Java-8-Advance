@@ -20,7 +20,7 @@ Instance method: not static
 
 Optional<> is recommended to use in getter to avoid null.
 
-
+Reduce: aggregating data like a+b,a-b
 
 
 
