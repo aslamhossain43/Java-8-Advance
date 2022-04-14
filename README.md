@@ -27,3 +27,28 @@ BiCunsumer: Real time use for BiCunsumer is map.forEach(BiCunsumer).
 BiPredicate: To compare and get boolean
 
 
+CompleteAbleFeature:It is used for asynchronous programming in java. It is used for background task without blocking main thread.
+Using this performance will be increased because multiple task is splitted in different thread. After completion execution of feature it will notify main thread then we can use it for our user.
+Why CompleteAbleFeature? : There are various way to implement asynchronous programming in java like Features,ExecutorService,Callback interfaces,
+Thread Pools, etc. There are some disadvantages of using Features given below:
+1. It cannot be manually completed.(Not possible to complete force fully)
+2. Multiple features cannot be chained together.(After execution not possible to reuse it)
+3. We cannot combine multiple features together.(After completing a lot of  features we cannot back to api finally)
+4. No proper exception handling mechanism.()
+
+
+Executor service framework:
+Submit(Callable) vs Execute(Runnable) in Executor service framework:
+Submit: Return after execution of thread
+Execute: no return
+
+CompletableFeature:
+runAsync:no return
+supplyAsync:return something
+
+
+
+
+
+
+
