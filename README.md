@@ -43,7 +43,7 @@ Submit: Return after execution of thread
 Execute: no return
 
 CompletableFeature:
-runAsync:no return
+runAsync:execute task in background and no return finally.
 supplyAsync:return something
 
 
