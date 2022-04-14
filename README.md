@@ -22,6 +22,8 @@ Optional<> is recommended to use in getter to avoid null.
 
 Reduce: aggregating data like a+b,a-b
 
-
+BiFunction: Real time use for BiFunction is with map.replaceAll(BiFunction).
+BiCunsumer: Real time use for BiCunsumer is map.forEach(BiCunsumer).
+BiPredicate: To compare and get boolean
 
 
