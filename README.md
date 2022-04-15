@@ -10,21 +10,21 @@ In stream api
 1. Consumer - accept(T t) - foreach - no return
 2. Predicate - test(T t) - filter - return boolean
 3. Supplier - get() - empty check for list and provide static data
-Stream api: It is used to process list of objects.
-map(): takes stream and return another transform stream.[a,b,c] > [A,B,C] used for one-to-one mapping
-flarMap(): takes stream of stream and return another stream.[[1,2],[3,4]] > [1,2,3,4]
+4. Stream api: It is used to process list of objects.
+5. map(): takes stream and return another transform stream.[a,b,c] > [A,B,C] used for one-to-one mapping
+6. flatMap(): takes stream of stream and return another stream.[[1,2],[3,4]] > [1,2,3,4]
 
 Concrete vs instance method:
-Concreate method: not abstract
-Instance method: not static
+1. Concreate method: not abstract
+2. Instance method: not static
 
 Optional<> is recommended to use in getter to avoid null.
 
 Reduce: aggregating data like a+b,a-b
 
-BiFunction: Real time use for BiFunction is with map.replaceAll(BiFunction).
-BiCunsumer: Real time use for BiCunsumer is map.forEach(BiCunsumer).
-BiPredicate: To compare and get boolean
+1. BiFunction: Real time use for BiFunction is with map.replaceAll(BiFunction).
+2. BiCunsumer: Real time use for BiCunsumer is map.forEach(BiCunsumer).
+3. BiPredicate: To compare and get boolean
 
 
 CompleteAbleFeature:It is used for asynchronous programming in java. It is used for background task without blocking main thread.
@@ -38,18 +38,18 @@ Thread Pools, etc. There are some disadvantages of using Features given below:
 
 
 Executor service framework:
-Submit(Callable) vs Execute(Runnable) in Executor service framework:
-Submit: Return after execution of thread
-Execute: no return
+1. Submit(Callable) vs Execute(Runnable) in Executor service framework:
+2. Submit: Return after execution of thread
+3. Execute: no return
 
 CompletableFeature:
-runAsync:execute task in background and no return finally.
-supplyAsync:return something
+1. runAsync:execute task in background and no return finally.
+2. supplyAsync:return something
 
 CompletableFeature chain:
-thenApply(Function): take input return value
-thenAccept(Consumer): take input no return
-thenRun(Runnable): take input no return
+1. thenApply(Function): take input return value
+2. thenAccept(Consumer): take input no return
+3. thenRun(Runnable): take input no return
 
 
 
