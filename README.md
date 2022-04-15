@@ -46,7 +46,10 @@ CompletableFeature:
 runAsync:execute task in background and no return finally.
 supplyAsync:return something
 
-
+CompletableFeature chain:
+thenApply(Function): take input return value
+thenAccept(Consumer): take input no return
+thenRun(Runnable): take input no return
 
 
 
