@@ -9,7 +9,7 @@ Example:
 In stream api
 1. Consumer - accept(T t) - foreach - no return
 2. Predicate - test(T t) - filter - return boolean
-3. Supplier - get() - empty check forlist
+3. Supplier - get() - empty check for list and provide static data
 Stream api: It is used to process list of objects.
 map(): takes stream and return another transform stream.[a,b,c] > [A,B,C] used for one-to-one mapping
 flarMap(): takes stream of stream and return another stream.[[1,2],[3,4]] > [1,2,3,4]
