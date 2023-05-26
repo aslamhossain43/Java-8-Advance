@@ -14,6 +14,11 @@ Functional interface: The interface who contains only one abstract method but ca
 10. flatMap(): takes stream of stream and return another stream.[[1,2],[3,4]] > [1,2,3,4]  
 
 
+## Executor service methods:
+1. Submit(Callable) vs Execute(Runnable) in Executor service framework:
+2. Submit: Return after execution of thread
+3. Execute: no return
+
 ## CompleteAbleFeature:  
 It is used for asynchronous programming in java. It is used for background task without blocking main thread.
 Using this performance will be increased because multiple task is splitted in different thread. After completion execution of feature it will notify main thread then we can use it for our user.
@@ -25,22 +30,27 @@ There are various way to implement asynchronous programming in java like Feature
 3. We cannot combine multiple features together.
 4. No proper exception handling mechanism.
 
-CompletableFeature:
+## CompletableFeature methods:
 1. runAsync: execute task in background and no return finally.
-2. supplyAsync: return something
+2. supplyAsync: return something.
 
 ## All the the methods in the CompletableFuture API has two variants - One which accepts an Executor as an argument and one which doesn’t
 
-CompletableFeature chain/callback methods:
-1. thenApply(Function): take input return value
-2. thenAccept(Consumer): take input no return
-3. thenRun(Runnable): take input no return
+### CompletableFeature chain/callback methods:
+1. thenApply(): take input return value
+2. thenAccept(): take input no return
+3. thenRun(): doestake input no return
+
+### CompletableFeature combines 2 futures:
+1. thenCompose(): combine two dependent futures
+2. thenCombine(): combine two independent futures
+
+### CompletableFeature combines multiple futures:
+1. allOf(): combine multiple independent futures, callback method calls after all futures finishing. If no need chain method then we can use join.
+2. anyOf(): combine multiple independent futures, callback method calls after any one of the futures finishing. If no need chain method then we can use join.
 
 
-Executor service framework:
-1. Submit(Callable) vs Execute(Runnable) in Executor service framework:
-2. Submit: Return after execution of thread
-3. Execute: no return
+
 
 
 
